@@ -5,7 +5,8 @@
 
 :root {
   color-scheme: light;
-  /* superfícies e tinta */
+  
+  /* superfícies e tinta (Mantidos - base clara já está excelente) */
   --page: #f9f9f7;
   --surface: #fcfcfb;
   --surface-2: #f0efec;
@@ -17,20 +18,23 @@
   --border: rgba(11, 11, 11, 0.10);
   --shadow: 0 1px 2px rgba(11,11,11,.05), 0 4px 16px rgba(11,11,11,.06);
 
-  /* marca / séries (paleta validada) */
-  --accent: #2a78d6;
+  /* marca / séries (Adaptado para o Verde da empresa) */
+  --accent: #059669;       /* Verde principal escurecido para dar contraste no fundo claro */
   --accent-ink: #ffffff;
-  --accent-soft: #e3eefb;
-  --s1: #2a78d6;  /* azul   */
-  --s2: #eb6834;  /* laranja*/
-  --s3: #1baf7a;  /* aqua   */
-  --seq-100: #cde2fb;
-  --seq-250: #86b6ef;
-  --seq-400: #3987e5;
-  --seq-550: #1c5cab;
-  --seq-700: #0d366b;
+  --accent-soft: #d1fae5;  /* Verde bem claro para o fundo do botão ativo no menu lateral */
+  
+  --s1: #059669;           /* Verde principal para a linha principal do gráfico */
+  --s2: #eb6834;           /* Mantido laranja para segunda linha de comparação/destaque */
+  --s3: #3b82f6;           /* Alterado para azul como terceira cor de apoio (substituiu o aqua) */
+  
+  /* Escala sequencial alterada de azul para verde (útil para gráficos de barras ou mapas de calor) */
+  --seq-100: #d1fae5;
+  --seq-250: #6ee7b7;
+  --seq-400: #10b981;
+  --seq-550: #059669;
+  --seq-700: #047857;
 
-  /* status (fixos) */
+  /* status (fixos) (Mantidos - cores semânticas padrão) */
   --good: #0ca30c;
   --good-text: #006300;
   --warning: #fab219;
@@ -55,12 +59,16 @@
   --axis: #383835;
   --border: rgba(255, 255, 255, 0.10);
   --shadow: 0 1px 2px rgba(0,0,0,.4);
-  --accent: #3987e5;
-  --accent-soft: #15293f;
-  --s1: #3987e5;
-  --s2: #d95926;
-  --s3: #199e70;
-  --good-text: #0ca30c;
+  
+  /* --- Cores da Marca (Verde) --- */
+  --accent: #10b981;       /* Verde vibrante para ícones, links e botões */
+  --accent-soft: #064e3b;  /* Verde bem escuro e suave para fundos de itens selecionados (ex: menu) */
+  
+  /* --- Cores do Gráfico e Alertas --- */
+  --s1: #10b981;           /* Cor principal do gráfico (linha de Consumo Real) */
+  --s2: #eb6834;            /* Vermelho para alertas/desvios (substituiu o tom laranja antigo) */
+  --s3: #3b82f6;           /* Cor de apoio (Azul) caso o gráfico precise de uma terceira linha */
+  --good-text: #22c55e;    /* Verde para textos de status positivo */
 }
 
 * { box-sizing: border-box; }
